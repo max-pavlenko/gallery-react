@@ -1,0 +1,32 @@
+.infoPage {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  padding: 16px 100px;
+  text-align: left;
+  display: grid;
+  place-content: center;
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  &__intro {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__section {
+    margin-bottom: 2rem;
+  }
+
+  &__section-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__section-description {
+    font-size: 1.2rem;
+  }
+}

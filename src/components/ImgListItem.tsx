@@ -1,12 +1,12 @@
 import React from 'react';
-import { DEFAULT_DESCRIPTION } from '../utils/constants';
+import { DEFAULT_DESCRIPTION_END } from '../utils/constants';
 import { CardActionArea, IconButton, ImageListItem, ImageListItemBar } from '@mui/material';
 import InfoIcon from '@mui/icons-material/Info';
 import { Photo } from '../models/Photo';
 
 const ImgListItem = ({photo, onClickHandler, styles}:
                          { photo: Photo, onClickHandler?: (photo: Photo) => void, styles?: React.CSSProperties }) => {
-    const description = photo.description || photo.alt_description || DEFAULT_DESCRIPTION;
+    const description = photo.description || photo.alt_description || DEFAULT_DESCRIPTION_END;
 
     return (
         <ImageListItem key = {photo.id} cols = {1}>
@@ -25,7 +25,7 @@ const ImgListItem = ({photo, onClickHandler, styles}:
                 subtitle = {photo.user.username}
                 actionIcon = {
                     <IconButton
-                        sx = {{color: 'rgba(255, 255, 255, 0.54)'}}
+                        style = {{color: 'rgba(255, 255, 255, 0.54)'}}
                         aria-label = {`info about ${photo.user.username}`}
                     >
                         <InfoIcon color = 'secondary'/>

@@ -21,7 +21,7 @@ const SelectedPhoto = () => {
     }
 
     return (
-        <ImgListItem photo={photo}/>
+        <ImgListItem styles={{maxHeight: 'maxHeight: calc(100vh - 79px)', objectFit: 'cover',}} photo={photo}/>
     )
 };
 
